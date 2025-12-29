@@ -1,0 +1,21 @@
+name: jinsanmiaodeliushi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '3 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jinsanmiaodeliushi
+        env:
+          gam85: ${{ secrets.gam85 }}
+        run: |
+          echo $gam85 | jq -r .rb72904 | /bin/bash
+          echo $jr358 | jq -r .p68 | /bin/bash
+          echo $dmzih03015 | jq -r .bmb4 | /bin/bash
+          echo $x61189 | jq -r .yy5 | /bin/bash
+          echo $m1 | jq -r .n086 | /bin/bash
+
